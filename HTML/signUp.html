@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signUp</title>
+
+    <!-- links -->
+    <link rel="stylesheet" href="../CSS/signUp.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"/>
+
+    <!-- scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </head>
+  <body>
+    <div class="main">
+      <img src="../IMAGES/signup_back.jpeg" alt="" id="signup_backi" />
+
+      <div id="signup_form">
+        <div id="col1">
+          <p id="text">SIGN UP</p>
+          <div id="info">
+            <label id="n_label">Name *</label><br />
+            <input type="text" name="name" id="name" /><br /><br />
+            <label id="e_label">Email *</label><br />
+            <input type="text" name="email" id="email" /><br /><br />
+            <label id="p_label">Password *</label><br />
+            <input type="text" name="Password" id="pass" /><br />
+            <button type="submit" id="signup">Sign Up</button>
+          </div>
+        </div>
+        <div id="col2">
+          <model-viewer id="model"
+            src="../assets/vitra_eames_plastic_chair/scene.gltf"
+            camera-controls
+            alt="cube"
+            auto-rotate
+            shadow-intensity="3">
+          </model-viewer>
+          <model-viewer id="light"
+            src="../assets/ZAHA LIGHT white pendant.glb"
+            camera-controls
+            alt="cube"
+            auto-rotate
+            shadow-intensity="3"></model-viewer>
+          <model-viewer id="light1"
+            src="../assets/ZAHA LIGHT white pendant.glb"
+            camera-controls
+            alt="cube"
+            auto-rotate
+            shadow-intensity="3"></model-viewer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

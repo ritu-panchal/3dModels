@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Furnitures</title>
+  <link rel="stylesheet" href="../CSS/landing.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- scripts -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-identity">
+      <h1><a href="#">3DFURNIX</a></h1>
+    </div>
+    <nav class="site-navigation">
+      <ul class="nav">
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Furniture</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li>
+          <a href="#"><i class="fa fa-user" style="color: #18392b"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div id="svg1">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="850" viewBox="0 0 1268 800" fill="none">
+      <path
+        d="M201.41 595.124C78.4179 594.063 0.572638 797.703 0.572638 797.703L273.878 1406.37L1707.73 526.031L1431.7 41.3977C1431.7 41.3977 1294.6 26.3942 1158.64 103.832C1076.5 150.612 932.239 -104.315 786.204 52.3524C723.064 120.089 739.58 261.009 664.5 310C590.113 358.54 504.316 332.914 409 339.5C271.134 349.026 353.944 596.441 201.41 595.124Z"
+        fill="url(#paint0_linear_10_35)" />
+      <defs>
+        <linearGradient id="paint0_linear_10_35" x1="289.522" y1="727.175" x2="1181.13" y2="306.568"
+          gradientUnits="userSpaceOnUse">
+          <stop stop-color="#F4E5D4" />
+          <stop offset="0.479167" stop-color="#606EE8" stop-opacity="0.406082" />
+          <stop offset="0.784424" stop-color="#E0BE0C" stop-opacity="0.29" />
+          <stop offset="1" stop-color="#BB8636" stop-opacity="0.6" />
+        </linearGradient>
+      </defs>
+    </svg>
+    <div id="cir1"></div>
+    <div id="cir2"></div>
+    <div id="cir3"></div>
+    <div id="cir4"></div>
+  </div>
+
+  <div id="main">
+    <div id="maint">
+      <span class="gradient">TRANSFORM TO</span>
+      <span class="gradient" style="display: block; margin-top: -50px">your space</span>
+      <div style="margin-top: -60px">
+        <span style="
+              display: inline-block;
+              font-size: 20px;
+              font-family: sans-serif;
+              letter-spacing: normal;
+              word-spacing: normal;
+            ">Discover furniture and experience unbelivable 3D view.</span>
+      </div>
+    </div>
+    <div id="textcir4"></div>
+
+    <model-viewer id="sofa" src="../assets/branagh_3_seater_chesterfield_sofa_green_velvet/scene.gltf" camera-controls
+      alt="cube" auto-rotate shadow-intensity="3"></model-viewer>
+  </div>
+
+  <div id="products">
+    <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000">
+      <p>Discover Products</p>
+    </div>
+    <div class="w3-show-inline-block">
+      <div id="sofa_div">
+        <div id="model">
+          <div data-aos="zoom-in" data-aos-duration="1300" data-aos-offset="300">
+            <model-viewer class="sofa_chair viewer" id="main_sofa_chair" src="../assets/red_sofa_chair.glb"
+              camera-controls alt="cube" auto-rotate shadow-intensity="3">
+            </model-viewer>
+            <model-viewer class="sofa_chair viewer" id="main_red_sofa_chair" src="../assets/red_sofa_chair.glb"
+              camera-controls alt="cube" shadow-intensity="3" style="display: none;">
+            </model-viewer>
+            <model-viewer class="sofa_chair viewer" id="main_blue_sofa_chair" src="../assets/blue_sofa_chair.glb"
+              camera-controls alt="cube" shadow-intensity="3" style="display: none;">
+            </model-viewer>
+            <model-viewer class="sofa_chair viewer" id="main_black_sofa_chair" src="../assets/black_sofa_chair.glb"
+              camera-controls alt="cube" shadow-intensity="3" style="display: none;">
+            </model-viewer>
+            <model-viewer class="sofa_chair viewer" id="main_pink_sofa_chair" src="../assets/second_pink.glb"
+              camera-controls alt="cube" shadow-intensity="3" style="display: none;">
+            </model-viewer>
+            <model-viewer class="sofa_chair viewer" id="main_yellow_sofa_chair" src="../assets/sofa_one/scene.gltf"
+              camera-controls alt="cube" shadow-intensity="3" style="display: none;">
+            </model-viewer>
+            <model-viewer class="sofa_chair viewer" id="main_brown_sofa_chair" src="../assets/second_red.glb"
+              camera-controls alt="cube" shadow-intensity="3" style="display: none;"></model-viewer>
+            </model-viewer>
+            <model-viewer class="sofa_chair viewer" id="main_lightpink_sofa_chair" src="../assets/besame_chair_hp.glb"
+              auto-rotate camera-controls alt="cube" shadow-intensity="3" style="display: none;">
+            </model-viewer>
+            <model-viewer class="sofa_chair viewer" id="main_lightblue_sofa_chair" src="../assets/new_third_lightblue.glb"
+              camera-controls alt="cube" shadow-intensity="3" style="display: none;">
+            </model-viewer>
+            <model-viewer class="sofa_chair viewer" id="main_peacock_sofa_chair" src="../assets/new_third_peacock.glb"
+              camera-controls alt="cube" shadow-intensity="3" style="display: none;">
+            </model-viewer>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="1000" data-aos-duration="1000"
+          style="display: inline-block;">
+          <div id="slider">
+            <div class="slider_container">
+              <div class="container">
+                <div class="swiper box_slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+
+
+                                <!-- ------ FIRST SOFA CHAIR ------- -->
+
+
+                                <model-viewer class="red_sofa_chair" id="red_sofa_chair"
+                                  src="../assets/red_sofa_chair.glb" camera-controls alt="cube" shadow-intensity="3">
+                                </model-viewer>
+                                <model-viewer class="red_sofa_chair" id="blue_sofa_chair"
+                                  src="../assets/blue_sofa_chair.glb" camera-controls alt="cube" shadow-intensity="3"
+                                  style="display: none;">
+                                </model-viewer>
+                                <model-viewer class="red_sofa_chair" id="black_sofa_chair"
+                                  src="../assets/black_sofa_chair.glb" camera-controls alt="cube" shadow-intensity="3"
+                                  style="display: none;">
+                                </model-viewer>
+
+
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- colors -->
+                      <div id="first">
+                        <div id="fblue" class="first_sofa_chair  bluesofa"></div>
+                        <div id="fblack" class="first_sofa_chair blacksofa"></div>
+                        <div id="fgray" class="first_sofa_chair redsofa"></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <!-- ------ SECOND SOFA CHAIR ------- -->
+
+
+                                <model-viewer class="second_sofa_chair" id="second_pink_sofa_chair"
+                                  src="../assets/second_pink.glb" auto-rotate camera-controls alt="cube"
+                                  shadow-intensity="3">
+                                </model-viewer>
+                                <model-viewer class="second_sofa_chair" id="second_yellow_sofa_chair"
+                                  src="../assets/sofa_one/scene.gltf" camera-controls alt="cube" shadow-intensity="3"
+                                  style="display: none;">
+                                </model-viewer>
+                                <model-viewer class="second_sofa_chair" id="second_brown_sofa_chair"
+                                  src="../assets/second_red.glb" camera-controls alt="cube" shadow-intensity="3"
+                                  style="display: none;">
+                                </model-viewer>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="second" style="margin-left: 40%;">
+                        <div class="first_sofa_chair  pinksofa" style="background-color: palevioletred;"></div>
+                        <div class="first_sofa_chair yellowsofa" style="background-color: #b1a74d;"></div>
+                        <div class="first_sofa_chair brownsofa" style="background-color: brown;"></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <!-- ------ THIRD SOFA CHAIR ------- -->
+
+
+                                <model-viewer class="third_sofa_chair" id="third_lightpink_sofa_chair"
+                                  src="../assets/besame_chair_hp.glb" auto-rotate camera-controls alt="cube"
+                                  shadow-intensity="3">
+                                </model-viewer>
+                                <model-viewer class="third_sofa_chair" id="third_lightblue_sofa_chair"
+                                  src="../assets/new_third_lightblue.glb" camera-controls alt="cube" shadow-intensity="3"
+                                  style="display: none;">
+                                </model-viewer>
+                                <model-viewer class="third_sofa_chair" id="third_peacock_sofa_chair"
+                                  src="../assets/new_third_peacock.glb" camera-controls alt="cube" shadow-intensity="3"
+                                  style="display: none;">
+                                </model-viewer>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- colors -->
+                      <div id="third" style="margin-left: 40%;">
+                        <div class="first_sofa_chair  lightpinksofa" style="background-color: rgb(245, 137, 173);">
+                        </div>
+                        <div class="first_sofa_chair lightbluesofa" style="background-color: #19d0dd;"></div>
+                        <div class="first_sofa_chair peacocksofa" style="background-color: rgb(1, 117, 133);"></div>
+                      </div>
+
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                                <p>
+                                  A stand-on with an exceptional compact stance. Great for tight
+                                  spaces and trailering.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                                <p>
+                                  A stand-on with an exceptional compact stance. Great for tight
+                                  spaces and trailering.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                                <p>
+                                  A stand-on with an exceptional compact stance. Great for tight
+                                  spaces and trailering.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                                <p>
+                                  A stand-on with an exceptional compact stance. Great for tight
+                                  spaces and trailering.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <!-- <div class="swiper-pagination"></div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w3-show-inline-block">
+      <div id="sofa_div" style="margin-top: 200px;">
+        <div id="model1" style="float: right; margin-top: 50px;">
+          <div data-aos="zoom-in" data-aos-duration="1300" data-aos-offset="300">
+            <model-viewer class="sofa_chair" id="main_sofa_chair" src="../assets/sofa_one/scene.gltf" camera-controls
+              alt="cube" auto-rotate shadow-intensity="3" style="display: none;">
+            </model-viewer>
+            <model-viewer class="sofa_chair" id="main_red_sofa_chair" src="../assets/red_sofa_chair.glb" camera-controls
+              alt="cube" shadow-intensity="3" style="display: none;">
+            </model-viewer>
+            <model-viewer class="sofa_chair" id="main_blue_sofa_chair" src="../assets/blue_sofa_chair.glb"
+              camera-controls alt="cube" shadow-intensity="3" style="display: none;">
+            </model-viewer>
+            <model-viewer class="sofa_chair" id="main_blue_sofa_chair" src="../assets/black_sofa_chair.glb"
+              camera-controls alt="cube" shadow-intensity="3" style="display: block;">
+            </model-viewer>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="1000" data-aos-duration="1000"
+          style="display: inline-block;">
+          <div id="slider">
+            <div class="slider_container">
+              <div class="container">
+                <div class="swiper box_slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+
+
+                                <!-- FIRSTCHAIRBOX -->
+
+                                <model-viewer class="red_sofa_chair" id="red_sofa_chair"
+                                  src="../assets/red_sofa_chair.glb" camera-controls alt="cube" shadow-intensity="3">
+                                </model-viewer>
+                                <model-viewer class="red_sofa_chair" id="blue_sofa_chair"
+                                  src="../assets/blue_sofa_chair.glb" camera-controls alt="cube" shadow-intensity="3"
+                                  style="display: none;">
+                                </model-viewer>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- colors -->
+                      <div id="first">
+                        <div id="fblue" class="first_sofa_chair" onclick="fblue()"></div>
+                        <div id="fblack" class="first_sofa_chair" onclick="fblack()"></div>
+                        <div id="fgray" class="first_sofa_chair"></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                                <p>
+                                  A stand-on with an exceptional compact stance. Great for tight
+                                  spaces and trailering.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                                <p>
+                                  A stand-on with an exceptional compact stance. Great for tight
+                                  spaces and trailering.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                                <p>
+                                  A stand-on with an exceptional compact stance. Great for tight
+                                  spaces and trailering.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                                <p>
+                                  A stand-on with an exceptional compact stance. Great for tight
+                                  spaces and trailering.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                                <p>
+                                  A stand-on with an exceptional compact stance. Great for tight
+                                  spaces and trailering.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                                <p>
+                                  A stand-on with an exceptional compact stance. Great for tight
+                                  spaces and trailering.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <!-- <div class="swiper-pagination"></div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w3-show-inline-block">
+      <div id="sofa_div">
+        <div id="model">
+          <div data-aos="zoom-in" data-aos-duration="1300" data-aos-offset="300">
+            <model-viewer class="sofa_chair" id="main_red_sofa_chair" src="../assets/red_sofa_chair.glb" camera-controls
+              alt="cube" shadow-intensity="3" style="display: none;">
+            </model-viewer>
+            <model-viewer class="sofa_chair" id="main_blue_sofa_chair" src="../assets/blue_sofa_chair.glb"
+              camera-controls alt="cube" shadow-intensity="3" style="display: none;">
+            </model-viewer>
+            <model-viewer class="sofa_chair" id="main_blue_sofa_chair" src="../assets/black_sofa_chair.glb"
+              camera-controls alt="cube" shadow-intensity="3" style="display: none;">
+            </model-viewer>
+          </div>
+        </div>
+        <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="1000" data-aos-duration="1000"
+          style="display: inline-block; position: relative; left: 40%; top: -80%;">
+          <div id="slider">
+            <div class="slider_container">
+              <div class="container">
+                <div class="swiper box_slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <model-viewer class="red_sofa_chair" id="red_sofa_chair"
+                                  src="../assets/red_sofa_chair.glb" camera-controls alt="cube" shadow-intensity="3"
+                                  onclick="callred()">
+                                </model-viewer>
+                                <model-viewer class="red_sofa_chair" id="blue_sofa_chair"
+                                  src="../assets/blue_sofa_chair.glb" camera-controls alt="cube" shadow-intensity="3"
+                                  style="display: none;">
+                                </model-viewer>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- colors -->
+                      <div id="first">
+                        <div id="fblue" class="first_sofa_chair" onclick="fblue()"></div>
+                        <div id="fblack" class="first_sofa_chair" onclick="fblack()"></div>
+                        <div id="fgray" class="first_sofa_chair"></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                                <p>
+                                  A stand-on with an exceptional compact stance. Great for tight
+                                  spaces and trailering.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                                <p>
+                                  A stand-on with an exceptional compact stance. Great for tight
+                                  spaces and trailering.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                                <p>
+                                  A stand-on with an exceptional compact stance. Great for tight
+                                  spaces and trailering.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                                <p>
+                                  A stand-on with an exceptional compact stance. Great for tight
+                                  spaces and trailering.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                                <p>
+                                  A stand-on with an exceptional compact stance. Great for tight
+                                  spaces and trailering.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="box1 bo1">
+                        <div class="cardContainer inactive">
+                          <div class="card">
+                            <div class="side front">
+                              <div class="info">
+                                <h2>Super S</h2>
+                                <p>
+                                  A stand-on with an exceptional compact stance. Great for tight
+                                  spaces and trailering.
+                                </p>
+                              </div>
+                            </div>
+                            <div class="side back">
+                              back
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <!-- <div class="swiper-pagination"></div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="../JS/landing.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>

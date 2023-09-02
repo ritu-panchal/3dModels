@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#svg1 {
+  margin-left: 350px;
+  margin-top: 60px;
+  z-index: -1;
+  position: fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#cir1 {
+  width: 406px;
+  height: 415px;
+  margin-top: -550px;
+  margin-left: 650px;
+  flex-shrink: 0;
+  border-radius: 415px;
+  background: rgba(175, 73, 255, 0.42);
+  filter: blur(100px);
+}
+
+#cir2 {
+  z-index: -1;
+  width: 432px;
+  height: 306px;
+  margin-top: -100px;
+  margin-left: 250px;
+  flex-shrink: 0;
+  border-radius: 432px;
+  background: #FD5CBD;
+  filter: blur(150px);
+}
+
+#cir3 {
+  width: 224px;
+  height: 224px;
+  margin-top: -900px;
+  margin-left: 85%;
+  flex-shrink: 0;
+  border-radius: 100%;
+  background: rgba(255, 233, 120, 0.65);
+}
+
+#textcir4 {
+  width: 300px;
+  height: 300px;
+  margin-top: -250px;
+  margin-left: -50px;
+  flex-shrink: 0;
+  border-radius: 100%;
+  background: rgba(175, 73, 255, 0.50);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.site-header {
+  padding: .5em 1em;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(2px);
+}
+
+
+.site-identity h1 {
+  font-size: 1.5em;
+  margin: .6em 0;
+  display: inline-block;
+}
+
+.site-navigation ul,
+.site-navigation li {
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation li {
+  display: inline-block;
+  margin: 1.4em 1em 1em 1em;
+}
+
+#main {
+  width: 100%;
+  height: 470px;
+  display: inline-block;
+  margin-top: 100px;
+}
+
+#light1 {
+  height: 200px;
+  width: 200px;
+}
+
+#sofa {
+  float: right;
+  height: 700px;
+  width: 700px;
+  margin-top: -250px;
+  margin-right: 50px;
+}
+
+#maint {
+  display: inline-block;
+  font-size: 80px;
+  /* background: -webkit-linear-gradient(#dcedc8, #ccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  color: #000;
+  font-family: 'Abril Fatface', cursive;
+  margin-top: 150px;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  margin-left: 30px;
+}
+
+.gradient {
+  font-size: 80px;
+  /* background: -webkit-linear-gradient(#603813, #b29f94); */
+  /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  color: #000;
+}
+
+#products {
+  display: inline-block;
+}
+
+#products p {
+  z-index: 100;
+  margin-top: 400px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+#sofa_div {
+  height: 300px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+#model {
+  height: 300px;
+  width: 500px;
+  display: inline-block;
+}
+
+.sofa_chair {
+  height: 400px;
+  width: 400px;
+  margin-left: 50px;
+  /* margin-top: -200px; */
+}
+
+#slider {
+  display: inline-block;
+  position: relative;
+  top: -60%;
+  left: 20%;
+  padding: 10px;
+}
+
+.slider_container {
+  height: 600px;
+  width: 900px;
+  padding: 30px;
+}
+
+
+.slider_container .container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.swiper-button-next {
+  color: aqua;
+}
+
+.box_slider [class^="swiper-button-"]::after {
+  font-size: 30px;
+  /* margin-top: 200px; */
+}
+
+.box_slider [class^="swiper-button-next"]::after {
+  font-size: 30px;
+  position: relative;
+  left: 30%;
+  z-index: 100;
+
+}
+
+.bo1 {
+  margin-left: 50px;
+  position: relative;
+}
+
+.cardContainer {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 4px;
+  perspective: 1000px;
+}
+
+.active {
+  transform: translateZ(0px) rotateY(180deg) !important;
+}
+
+.active:after {
+  display: none;
+}
+
+.card {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -moz-backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transform: translateZ(-100px);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 0 14px 50px -4px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1.4);
+}
+
+.card:hover {
+  transform: translateZ(0px);
+}
+
+.card:hover:after {
+  opacity: 1;
+}
+
+.card .side {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 10px 2px 20px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+
+}
+
+.card .front {
+  z-index: 2;
+  border-radius: 30px;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+.card .info {
+  padding: 16px;
+}
+
+.front .img {
+  background-color: #ffffff;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px 20px 20px 20px;
+  width: 100%;
+  height: 250px;
+}
+
+.back {
+  position: relative;
+}
+
+.back h2 {
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+
+.back .reviews {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.back .reviews p {
+  transition: 0.3s ease-in-out;
+}
+
+.back .reviews:hover p {
+  color: #555;
+}
+
+.back li {
+  line-height: 22px;
+  margin: 2px 0 6px 0;
+}
+
+.back .btn {
+  position: absolute;
+  bottom: 16px;
+  width: calc(100% - 32px);
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFC324;
+  background-image: linear-gradient(-90deg, #FFB714, #FFE579);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.back .btn:hover h4 {
+  transform: translateX(0px);
+}
+
+.back .btn:hover svg {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.back .btn h4 {
+  transform: translateX(12px);
+  transition: transform 0.3s ease-out;
+}
+
+.back .btn svg {
+  margin: 1px 0 0 4px;
+  transform: translateX(-8px);
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.red_sofa_chair {
+  height: 150px;
+  width: 150px;
+
+}
+
+#first {
+  margin-left: 100px;
+}
+
+.first_sofa_chair {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: #000;
+  border-radius: 100%;
+  border: 3px solid white;
+}
+
+#fblue {
+  background-color: blue;
+}
+
+#fblack {
+  background-color: #000;
+}
+
+#fgray {
+  background-color: red;
+}
+
+#model1 {
+  position: relative;
+  display: inline-block;
+  left: 10%;
+  top: -40%;
+}
+
+.second_sofa_chair {
+  height: 170px;
+  width: 170px;
+}
+.third_sofa_chair {
+  height: 17 0px;
+  width: 170px;
+}
